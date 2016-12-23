@@ -60,3 +60,22 @@ Os resumos dos artigos publicados na *SciELO* normalmente se apresentam em dois 
       ...
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+
+LaTeX
+-----
+
+  .. code-block:: tex
+
+    
+      ...
+      % <article-meta> %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+          ...
+      \begin{abstract{abstract}   
+      \renewcommand{\abstractname{Resumo}
+      Verificar a sensibilidade e especificidade das curvas de fluxo-volume na detecção de obstrução da via aérea central (OVAC), e se os critérios qualitativos e quantitativos da curva se relacionam com a localização, o tipo e o grau de obstrução. Métodos: Durante quatro meses foram selecionados, consecutivamente, indivíduos com indicação para broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma semana. Quatro revisores classificaram a morfologia da curva sem conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um quinto revisor averiguou os critérios morfológicos e quantitativos.
+
+      \end{abstract}
+          ...
+      % </article-meta>  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+      ...
+
