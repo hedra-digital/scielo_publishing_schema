@@ -187,3 +187,20 @@ Para casos em que não há rótulo (``<label>``) explícito relacionando o autor
 
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
+
+LaTeX
+-----
+
+  .. code-block:: tex
+
+      % Defined at scielostyle.sty
+      \renewcommand{\xrefbibrstyle}{}
+      \renewcommand{\xrefbibr}[1]{\xrefbibrstyle #1}
+      ...
+
+      Chagas disease (ChD), a neglected tropical disease caused by infection 
+      with the parasite\xrefbibr{(2)}, Quality of life, 
+      Health-related quality of life, Cardiomyopathy, Determining factors
+      ...
+
+.. {"reviewed_on": "20161223", "by": "jorge@hedra.com.br"}
