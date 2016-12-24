@@ -32,4 +32,22 @@ Identifica o grupo de palavras-chave do artigo por idioma. Contém, obrigatoriam
     ...
 
 
-.. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+LaTeX
+-----
+
+  .. code-block:: tex
+ 
+      % Defined at scielostyle.sty
+      \renewcommand{\kwdgroupstyle}{\itshape}
+      \renewcommand{\kwdgrouptitle}{Keywords:}
+      \renewcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
+      \renewcommand{\kwdgroupbeforeskip}{\medskip}
+      \renewcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
+                                    \kwdgrouptitlestyle
+                                    \kwdgrouptitle} 
+                                    \kwdgroupstyle #1}
+      ...
+      \kwdgroup{Chagas disease, Quality of life, Health-related quality of life, Cardiomyopathy, Determining factors}
+      ...
+
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
