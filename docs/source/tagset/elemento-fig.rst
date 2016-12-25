@@ -195,7 +195,7 @@ LaTeX
       \label{f01}
       \includegraphics[width=\imagewidthdefault]{elemento-fig-example.jpg}    % <graphic xlink:href=>
       \xmlcaption{Figura 1}{Example of 
-                        a parametric plot ($\sin (x), \cos(x), x$)}           % <caption>        
+                        a parametric plot ($\sin (x), \cos(x), x$)}           % <label>|<caption>        
       \end{figure}
       ...
 
