@@ -60,3 +60,21 @@ Para *SciELO* Brasil consulte:
 :ref:`scielo-brasil`
 
 .. {"reviewed_on": "20160627", "by": "gandhalf_thewhite@hotmail.com"}
+
+LaTeX
+-----
+
+  .. code-block:: tex
+
+      ...
+      % Defined at scielostyle.sty
+      \renewcommand{\licencestyle}{\itshape\color{out}\tiny\noindent}
+
+      \licence[(Openaccess)][(en)]{This is an open-access article distributed under the terms of the Creative
+     Commons Attribution License}
+      ...
+
+.. {"reviewed_on": "20161225", "by": "jorge@hedra.com.br"}
+
+
+

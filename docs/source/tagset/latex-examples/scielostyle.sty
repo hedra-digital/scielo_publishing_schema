@@ -1,3 +1,7 @@
+\usepackage{xparse}     % elemento-licence
+
+
+
 																% <kwd-group>
       \newcommand{\kwdgroupstyle}{\itshape}
       \newcommand{\kwdgrouptitle}{Keywords:}
@@ -13,3 +17,9 @@
                                                                                                  % <date-in-citation>
       \newcommand{\dateincitationstyle}{\itshape}
       \newcommand{\dateincitation}[1]{{\dateincitationstyle #1}}
+                                                                                                 % <licence>
+      \renewcommand{\licencestyle}{\color{out}\tiny\noindent}
+      \DeclareDocumentCommand{\licence}{  O{} O{} m }{{\licencestyle%
+                                          #3     % <licence-p>        
+                                          #1     % @license-type (non mandatory) 
+                                          #2}}   % xml:lang="en" (non mandatory)

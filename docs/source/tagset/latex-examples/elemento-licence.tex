@@ -1,0 +1,34 @@
+%%% Execute with `pdflatex <file.tex>
+
+%%%%% Preamble
+\documentclass[10pt,a4paper]{article}
+
+\usepackage{latex-basic}
+\usepackage{scielostyle}
+\usepackage{xparse}
+
+
+\definecolor{out}{rgb}{1,0.2,1}
+
+
+\begin{document}
+
+\printtitle 
+\printauthor
+
+
+                  % Defined at scielostyle.sty
+			      \renewcommand{\licencestyle}{\color{out}\tiny\noindent}
+				  \DeclareDocumentCommand{\licence}{ O{default1} O{default2} m }{{\licencestyle #3 #1 #2}}
+
+
+				  \lipsum[1-3]\vfill
+				  \licence[(Openaccess)][(en)]{This is an open-access article distributed under the terms of the Creative
+                 Commons Attribution License}
+
+                  \licence[][(pt)]{Essa é uma licença aberta}
+
+                  \licence[(Openaccess)][]{Esa es una licencia abierta}
+
+%\input{latex-example-lipsum}
+\end{document}
