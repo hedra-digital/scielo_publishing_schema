@@ -68,11 +68,17 @@ LaTeX
 
       ...
       % Defined at scielostyle.sty
-      \renewcommand{\licencestyle}{\itshape\color{out}\tiny\noindent}
+      \renewcommand{\licencestyle}{\color{out}\tiny\noindent}
+      \DeclareDocumentCommand{\licence}{ O{default1} O{default2} m }{{\licencestyle #3 #1 #2}}
+
+      ...
 
       \licence[(Openaccess)][(en)]{This is an open-access article distributed under the terms of the Creative
      Commons Attribution License}
-      ...
+
+      \licence[][(pt)]{Essa é uma licença aberta}
+
+      \licence[(Openaccess)][]{Esa es una licencia abierta}
 
 .. {"reviewed_on": "20161225", "by": "jorge@hedra.com.br"}
 
