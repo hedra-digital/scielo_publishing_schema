@@ -190,7 +190,7 @@ LaTeX
       % For a two column image
       % \renewcommand{\imagewidthdefault}{\maxwidth{\textwidth}}
       \renewcommand{\xmlcaption}[2]{\caption{#2}}         %  <label> <caption>                                    
-...
+    ...
       \begin{figure}[h]                                                       % <fig>
       \label{f01}
       \includegraphics[width=\imagewidthdefault]{elemento-fig-example.jpg}    % <graphic xlink:href=>
