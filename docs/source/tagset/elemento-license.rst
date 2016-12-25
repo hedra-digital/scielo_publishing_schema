@@ -85,5 +85,7 @@ LaTeX
 
 .. {"reviewed_on": "20161225", "by": "jorge@hedra.com.br"}
 
+https://github.com/hedra-digital/scielo_publishing_schema/blob/master/docs/source/tagset/latex-examples/elemento-licence.pdf
+
 
 
