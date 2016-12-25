@@ -174,3 +174,33 @@ Exemplo de Figura com legenda traduzida:
 .. note:: Figuras que não estejam identificadas sob ``<app-group>`` devem ser inseridas obrigatoriamente após a primeira chamada no texto. Para material suplementar, analisar e identificar caso a caso.
 
 .. {"reviewed_on": "20160624", "by": "gandhalf_thewhite@hotmail.com"}
+
+
+LaTeX
+-----
+
+  .. code-block:: tex
+ 
+      % Defined at scielostyle.sty
+      \captionsetup{margin=10pt,
+                  font=small,
+                  labelfont=bf,
+                  labelsep=endash}
+      \renewcommand{\imagewidthdefault}{1\textwidth}
+      % For a two column image
+      % \renewcommand{\imagewidthdefault}{\maxwidth{\textwidth}}
+      \renewcommand{\xmlcaption}[2]{\caption{#2}}         %  <label> <caption>                                    
+...
+      \begin{figure}[h]                                                       % <fig>
+      \label{f01}
+      \includegraphics[width=\imagewidthdefault]{elemento-fig-example.jpg}    % <graphic xlink:href=>
+      \xmlcaption{Figura 1}{Example of 
+                        a parametric plot ($\sin (x), \cos(x), x$)}           % <caption>        
+      \end{figure}
+      ...
+
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
+
+
+
+      
