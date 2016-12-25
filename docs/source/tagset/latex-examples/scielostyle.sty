@@ -18,8 +18,27 @@
       \newcommand{\dateincitationstyle}{\itshape}
       \newcommand{\dateincitation}[1]{{\dateincitationstyle #1}}
                                                                                                  % <licence>
-      \renewcommand{\licencestyle}{\color{out}\tiny\noindent}
+      \newcommand{\licencestyle}{\tiny\noindent}
       \DeclareDocumentCommand{\licence}{  O{} O{} m }{{\licencestyle%
                                           #3     % <licence-p>        
                                           #1     % @license-type (non mandatory) 
                                           #2}}   % xml:lang="en" (non mandatory)
+
+                                                                                                 % <date>
+      \newcommand{\xmldatestyle}{\itshape}
+      \DeclareDocumentCommand{\xmldate}{ O{} O{} O{} m }{{\xmldatestyle%
+                               \ifx#1\relax\else #1-\fi % <day> (non mandatory)
+                               \ifx#2\relax\else #2-\fi    % <month> (non mandatory)
+                               #4    % <year>
+                               \ifx#3\relax\else (#3)\fi}}  % <date date-type="received"> (non mandatory)
+                                                                                                 % <edition>
+                                                                                                 % <email>
+                                                                                                 % <institution>
+                                                                                                 % <isbn>
+                                                                                                 % <issn>
+                                                                                                 % <on-behalf-of>
+                                                                                                 % <patent>
+                                                                                                 % <publisher>
+                                                                                                 % <publisher-loc>
+                                                                                                 % <publisher-name>
+
