@@ -67,13 +67,16 @@ LaTeX
   .. code-block:: tex
 
       ...
-
+ 
+      % Defined at scielostyle.sty
        \renewcommand{\xmldatestyle}{\color{out}\bfseries}
        \RenewDocumentCommand{\xmldate}{ O{} O{} O{} m }{{\xmldatestyle%
                                \ifx#1\relax\else #1-\fi % <day> (non mandatory)
                                \ifx#2\relax\else #2-\fi    % <month> (non mandatory)
                                #4    % <year>
                                \ifx#3\relax\else (#3)\fi}}  % <date date-type="received"> (non mandatory)
+
+      ...
 
       \xmldate{2015}                % year
 
