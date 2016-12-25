@@ -165,3 +165,30 @@ Seções que apresentam marcador de numeração são identificadas juntamente co
 
 
 .. {"reviewed_on": "20160629", "by": "gandhalf_thewhite@hotmail.com"}
+
+
+LaTeX
+-----
+
+  .. code-block:: tex
+ 
+      % Defined at scielostyle.sty
+      \renewcommand{\sectype}[1]{}  % Comand for future conditions (death commands)
+
+   
+      \section{Introduction}  % <title>
+      \label{Introduction}    % <title> 
+      \sectype{sec-type}      % <sec sec-type="intro">
+      
+      Central airway obstruction (CAO) is a pathological process that leads to 
+      airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
+      Correct diagnosis and treatment of CAO is an area of interest and concern for health 
+      professionals,given that this disease has the potential to cause significant morbidity and mortality.
+      ...
+
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
+
+
+
+
+ 

@@ -41,9 +41,13 @@
                                \ifx#3\relax\else #3--\fi    % <day> (non mandatory)
                                #5                           % <year>
                                \ifx#4\relax\else~(#4)\fi}}  % <date pub-type="epub"> (non mandatory)
+                                 
 
               
-                                                                                                 % <edition>
+
+% Death commands (for not loosing important data)
+                                                                                               % <sec>
+      \newcommand{\sectype}[1]{}
                                                                                                  % <email>
                                                                                                  % <institution>
                                                                                                  % <isbn>
