@@ -69,7 +69,10 @@ LaTeX
       ...
       % Defined at scielostyle.sty
       \renewcommand{\licencestyle}{\color{out}\tiny\noindent}
-      \DeclareDocumentCommand{\licence}{ O{default1} O{default2} m }{{\licencestyle #3 #1 #2}}
+      \DeclareDocumentCommand{\licence}{  O{} O{} m }{{\licencestyle%
+                                          #3     % <licence-p>        
+                                          #1     % @license-type (non mandatory) 
+                                          #2}}   % xml:lang="en" (non mandatory)
 
       ...
 
