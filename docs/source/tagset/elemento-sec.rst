@@ -175,16 +175,47 @@ LaTeX
       % Defined at scielostyle.sty
       \renewcommand{\sectype}[1]{}  % Comand for future conditions (death commands)
 
-   
-      \section{Introduction}  % <title>
+    ... 
+
+     \section{Introduction}  % <sec><title>...</sec>
       \label{Introduction}    % <title> 
       \sectype{sec-type}      % <sec sec-type="intro">
       
+    Central airway obstruction (CAO) is a pathological process that leads to 
+      airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
+      
+
+      \subsection{Subsessão}  % <sec> <sec> <title>...</sec> </sec>
+      \label{Subsessão}
+
+      Central airway obstruction (CAO). (Ver p.\pageref{Subitem de parágrafo}) Is a pathological process that leads to 
+      airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
+      Correct diagnosis and treatment of CAO is an area of interest and concern for health 
+      professionals,given that this disease has the potential to cause significant morbidity and mortality.
+      
+      \subsubsection{Subsubsessão}  % <sec> <sec> <sec> <title>...</sec> </sec> </sec>
+      \label{Subsubsessão}
+
       Central airway obstruction (CAO) is a pathological process that leads to 
       airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
       Correct diagnosis and treatment of CAO is an area of interest and concern for health 
       professionals,given that this disease has the potential to cause significant morbidity and mortality.
-      ...
+
+      \paragraph{Item de parágrafo}  % <sec> <sec> <sec> <sec> <title>...</sec> </sec> </sec> </sec>
+      \label{Item de parágrafo}
+
+      Central airway obstruction (CAO) is a pathological process that leads to 
+      airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
+      Correct diagnosis and treatment of CAO is an area of interest and concern for health 
+      professionals,given that this disease has the potential to cause significant morbidity and mortality.
+
+      \paragraph{Subitem de parágrafo}  % <sec> <sec> <sec> <sec> <sec> <title>... <sec> </sec> </sec> </sec> </sec>
+      \label{Subitem de parágrafo}
+
+      Central airway obstruction (CAO) is a pathological process that leads to 
+      airflow limitation at the level of the glottis, subglottis, trachea, and main bronchi. 
+      Correct diagnosis and treatment of CAO is an area of interest and concern for health 
+      professionals,given that this disease has the potential to cause significant morbidity and mortality.
 
 .. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
 
