@@ -56,3 +56,17 @@ Exemplo ``<date-in-citation>`` do tipo data de atualização:
 
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
+
+LaTeX
+-----
+
+  .. code-block:: tex
+ 
+    % Defined at scielostyle.sty
+    \renewcommand{\dateincitationstyle}{\itshape\color{bl}\bfseries}
+    \renewcommand{\dateincitation}[1]{{\dateincitationstyle #1}}
+      ...
+    Machado de Assis, \emph{Dom Casmurro}. Sao Paulo: Garnier \dateincitation{(2006 Jul 20)}
+      ...
+
+.. {"reviewed_on": "20161225", "by": "jorge@hedra.com.br"}

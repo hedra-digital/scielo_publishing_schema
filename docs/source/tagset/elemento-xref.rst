@@ -198,9 +198,19 @@ LaTeX
       \renewcommand{\xrefbibr}[1]{\xrefbibrstyle #1}
       ...
 
+      Verificar a sensibilidade e especificidade das curvas de fluxo-volume na
+      detecção de obstrução da via aérea central\xrefbibr{(1)} (OVAC), e se os critérios
+      qualitativos e quantitativos da curva se relacionam com a localização, o
+      tipo e o grau de obstrução. Métodos: Durante quatro meses foram
+      selecionados, consecutivamente, indivíduos com indicação para
+      broncoscopia. Todos efetuaram avaliação clínica, preenchimento de escala
+      de dispneia, curva de fluxo-volume e broncoscopia num intervalo de uma
+      semana. Quatro revisores classificaram a morfologia da curva sem.      
       Chagas disease (ChD), a neglected tropical disease caused by infection 
-      with the parasite\xrefbibr{(2)}, Quality of life, 
+       with the parasite\xrefbibr{(2)}\xrefbibr{(3)}, Quality of life,\xrefbibr{(4)} 
       Health-related quality of life, Cardiomyopathy, Determining factors
+      conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um
+      quinto revisor averiguou os critérios morfológicos e quantitativos.
       ...
 
 .. {"reviewed_on": "20161223", "by": "jorge@hedra.com.br"}

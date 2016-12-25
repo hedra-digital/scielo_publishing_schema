@@ -6,17 +6,7 @@
 \usepackage{latex-basic}
 \usepackage{scielostyle}
 
-\definecolor{bl}{rgb}{0.0,0.2,0.6}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage[runin]{abstract}              % runin option for a run-in title
-\setlength\absleftindent{30pt}            % left margin
-\setlength\absrightindent{30pt}           % right margin
-\abslabeldelim{\quad}                                 % 
-\setlength{\abstitleskip}{-10pt}
-\renewcommand{\abstractname}{}
-\renewcommand{\abstracttextfont}{\color{bl} \small \slshape}      % slanted text
-
+\definecolor{out}{rgb}{1,0.2,0.6}
 
 \begin{document}
 
@@ -24,9 +14,9 @@
 \printauthor
 
 
-      \renewcommand{\kwdgroupstyle}{\itshape}
+      \renewcommand{\kwdgroupstyle}{\itshape\color{out}}
       \renewcommand{\kwdgrouptitle}{Keywords:}
-      \renewcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
+      \renewcommand{\kwdgrouptitlestyle}{\noindent\bfseries\color{out}}
       \renewcommand{\kwdgroupbeforeskip}{\medskip}
       \renewcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
                                     \kwdgrouptitlestyle
