@@ -4,7 +4,8 @@
 
 
 
-																% <kwd-group>
+
+% <kwd-group>
       \newcommand{\kwdgroupstyle}{\itshape}
       \newcommand{\kwdgrouptitle}{Keywords:}
       \newcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
@@ -13,55 +14,51 @@
                                     \kwdgrouptitlestyle
                                     \kwdgrouptitle} 
                                     \kwdgroupstyle #1}
-     																 % <xref ref-type="bibr"...>
+
+% <xref ref-type="bibr"...>
       \newcommand{\xrefbibrstyle}{}
       \newcommand{\xrefbibr}[1]{\xrefbibrstyle\#1}
-                                                                                                 % <date-in-citation>
+
+% <date-in-citation>
       \newcommand{\dateincitationstyle}{\itshape}
       \newcommand{\dateincitation}[1]{{\dateincitationstyle #1}}
-                                                                                                 % <licence>
+
+% <licence>
       \newcommand{\licencestyle}{\tiny\noindent}
       \DeclareDocumentCommand{\licence}{  O{} O{} m }{{\licencestyle%
                                           #3     % <licence-p>        
                                           #1     % @license-type (non mandatory) 
                                           #2}}   % xml:lang="en" (non mandatory)
 
-                                                                                                 % <date>
+
+% <date>
        \newcommand{\xmldatestyle}{}
        \NewDocumentCommand{\xmldate}{ O{} O{} O{} m }{{\xmldatestyle%
-                               \ifx#1\relax\else #1-\fi % <day> (non mandatory)
-                               \ifx#2\relax\else #2-\fi    % <month> (non mandatory)
-                               #4    % <year>
+                               \ifx#1\relax\else #1-\fi 	% <day> (non mandatory)
+                               \ifx#2\relax\else #2-\fi    	% <month> (non mandatory)
+                               #4    						% <year>
                                \ifx#3\relax\else (#3)\fi}}  % <date date-type="received"> (non mandatory)
 
                                                                                                  
-                                                                                                 % <pub-date>
+
+% <pub-date>
        \newcommand{\xmlpubdatestyle}{}
        \NewDocumentCommand{\xmlpubdate}{ O{} O{} O{} O{} m }{{\xmlpubdatestyle%
-                               \ifx#1\relax\else (#1)\ \fi  %  <season> (non mandatory)
+                               \ifx#1\relax\else (#1)\ \fi  % <season> (non mandatory)
                                \ifx#2\relax\else #2--\fi    % <month> (non mandatory)
                                \ifx#3\relax\else #3--\fi    % <day> (non mandatory)
                                #5                           % <year>
                                \ifx#4\relax\else~(#4)\fi}}  % <date pub-type="epub"> (non mandatory)
                                  
-
-              
-
-% Death commands (for not loosing important data)
-                                                                                                 % <sec>
-       \newcommand{\sectype}[1]{}
-                                                                                                 % <fig>
+% <fig>
       \captionsetup{margin=10pt,
                   font=small,
                   labelfont=bf,
                   labelsep=endash}
       \newcommand{\imagewidthdefault}{0.5\textwidth}
       \newcommand{\xmlcaption}[2]{\caption{#2}}  %  <label>+<caption>
-                                                                                                 % <isbn>
-                                                                                                 % <issn>
-                                                                                                 % <on-behalf-of>
-                                                                                                 % <patent>
-                                                                                                 % <publisher>
-                                                                                                 % <publisher-loc>
-                                                                                                 % <publisher-name>
 
+
+% Death commands (for not loosing important data) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% <sec>
+      \newcommand{\sectype}[1]{}
