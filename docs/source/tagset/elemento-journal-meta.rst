@@ -21,6 +21,7 @@ Exemplo:
 .. code-block:: xml
 
    ...
+
    <journal-meta>
         <journal-id journal-id-type="nlm-ta">Braz J Med Biol Res</journal-id>
         <journal-id journal-id-type="publisher-id">bjmbr</journal-id>
@@ -45,7 +46,7 @@ LaTeX
 
   .. code-block:: tex
  
-% <journal-meta>
+      % <journal-meta>
       \renewenvironment{journalmeta}{\begin{tcolorbox}[title=<journal-meta>]}{\end{tcolorbox}}
       % <journal-id journal-id-type="nlm-ta">
              \renewcommand{\journalidtypenlmstyle}{\itshape}

@@ -41,3 +41,12 @@ Para *SciELO* Brasil consulte:
 
 
 .. {"reviewed_on": "20160803", "by": "gandhalf_thewhite@hotmail.com"}
+
+
+LaTeX
+-----
+
+Ver `article-meta`.
+
+
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}

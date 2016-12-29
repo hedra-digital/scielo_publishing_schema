@@ -1,19 +1,92 @@
+\RequirePackage{abstract}   % elemento-abstract
 \RequirePackage{xparse}     % elemento-licence...
 \RequirePackage{caption}    % elemento-fig
 \RequirePackage{graphicx}   % elemento-fig
 
 
+% <journal-meta>
+      \newenvironment{journalmeta}{}{}
+      %     <journal-id journal-id-type="nlm-ta">
+            \newcommand{\journalidtypenlmstyle}{\itshape}
+            \newcommand{\journalidtypenlm}[1]{{\journalidtypenlmstyle #1}}
+      %     <journal-id journal-id-type="publisher-id">
+            \newcommand{\journalidtypeublisheridstyle}{\itshape}
+            \newcommand{\journalidtypeublisherid}[1]{{\journalidtypeublisheridstyle #1}}
+      %     <journal-title-group>
+            \newenvironment{journaltitlegroup}{}{}
+                  %     <journal-title>
+                        \newcommand{\journaltitlestyle}{\itshape}
+                        \newcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
+                  %     <abbrev-journal-title abbrev-type="publisher">
+                         \newcommand{\abbrevjournaltitlepublisherstyle}{\itshape}
+                         \newcommand{\abbrevjournaltitlepublisher}[1]{{\abbrevjournaltitlepublisherstyle #1}}
+      %     <issn pub-type="epub">
+            \newcommand{\issnepubstyle}{\itshape}
+            \newcommand{\issnepub}[1]{{\issnepubstyle #1}}
+      %     <issn pub-type="ppub">
+            \newcommand{\issnppubstyle}{\itshape}
+            \newcommand{\issnppub}[1]{{\issnppubstyle #1}}
+      %     <publisher>
+            \newenvironment{publisher}{}{}
+            %     <publisher-name>
+                  \newcommand{\publishernamestyle}{\itshape}
+                  \newcommand{\publishername}[1]{{\publishernamestyle #1}}
 
 
-% <kwd-group>
-      \newcommand{\kwdgroupstyle}{\itshape}
-      \newcommand{\kwdgrouptitle}{Keywords:}
-      \newcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
-      \newcommand{\kwdgroupbeforeskip}{\medskip}
-      \newcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
-                                    \kwdgrouptitlestyle
-                                    \kwdgrouptitle} 
-                                    \kwdgroupstyle #1}
+
+% <article-meta>
+      \newenvironment{articlemeta}{}{}
+      %      <article-id pub-id-type="doi">
+            \newcommand{\articleidpubidtypedoi}[1]{#1}
+      %      <article-categories> ...
+            \newenvironment{articlecategories}{}{}
+      %      <title-group> ...
+            \newenvironment{titlegroup}{}{}
+      %      <contrib-group> ...
+            \newenvironment{contribgroup}{}{}
+      %      <author-notes> ...
+            \newenvironment{authornotes}{}{}
+      %      <pub-date> ...
+            \newenvironment{pubdate}{}{}
+            \newcommand{\xmlpubdatestyle}{}
+            \NewDocumentCommand{\xmlpubdate}{ O{} O{} O{} O{} m }{{\xmlpubdatestyle%
+                                     \ifx#1\relax\else (#1)\ \fi  % <season> (non mandatory)
+                                     \ifx#2\relax\else #2--\fi    % <month> (non mandatory)
+                                     \ifx#3\relax\else #3--\fi    % <day> (non mandatory)
+                                     #5                           % <year>
+                                     \ifx#4\relax\else~(#4)\fi}}  % <date pub-type="epub"> (non mandatory)
+      %      <volume>
+            \newcommand{\volume}[1]{#1}
+      %      <issue>
+            \newcommand{\issue}[1]{#1}
+      %      <fpage>
+            \newcommand{\fpage}[1]{#1}
+      %      <lpage>
+            \newcommand{\lpage}[1]{#1}
+      %      <history> ...
+            \newenvironment{history}{}{}
+      %      <permissions> ...
+            \newenvironment{permissions}{}{}
+      %      <abstract> ...
+            \setlength\absleftindent{30pt}                                    % left margin
+            \setlength\absrightindent{30pt}                                   % right margin
+            \abslabeldelim{\quad}                                  
+            \setlength{\abstitleskip}{-10pt}
+            \renewcommand{\abstractname}{}
+            \renewcommand{\abstracttextfont}{\color{bl} \small \slshape}      % slanted text
+      %      <kwd-group> ...
+            \newenvironment{kwd-group}{}{}
+            \newcommand{\kwdgroupstyle}{\itshape}
+            \newcommand{\kwdgrouptitle}{Keywords:}
+            \newcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
+            \newcommand{\kwdgroupbeforeskip}{\medskip}
+            \newcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
+                                          \kwdgrouptitlestyle
+                                          \kwdgrouptitle} 
+                                          \kwdgroupstyle #1}
+      %      <counts> ...
+            \newenvironment{counts}{}{}
+
 
 % <xref ref-type="bibr"...>
       \newcommand{\xrefbibrstyle}{}
@@ -34,21 +107,13 @@
 % <date>
        \newcommand{\xmldatestyle}{}
        \NewDocumentCommand{\xmldate}{ O{} O{} O{} m }{{\xmldatestyle%
-                               \ifx#1\relax\else #1-\fi 	% <day> (non mandatory)
-                               \ifx#2\relax\else #2-\fi    	% <month> (non mandatory)
-                               #4    						% <year>
+                               \ifx#1\relax\else #1-\fi     % <day> (non mandatory)
+                               \ifx#2\relax\else #2-\fi     % <month> (non mandatory)
+                               #4                                       % <year>
                                \ifx#3\relax\else (#3)\fi}}  % <date date-type="received"> (non mandatory)
 
                                                                                                  
 
-% <pub-date>
-       \newcommand{\xmlpubdatestyle}{}
-       \NewDocumentCommand{\xmlpubdate}{ O{} O{} O{} O{} m }{{\xmlpubdatestyle%
-                               \ifx#1\relax\else (#1)\ \fi  % <season> (non mandatory)
-                               \ifx#2\relax\else #2--\fi    % <month> (non mandatory)
-                               \ifx#3\relax\else #3--\fi    % <day> (non mandatory)
-                               #5                           % <year>
-                               \ifx#4\relax\else~(#4)\fi}}  % <date pub-type="epub"> (non mandatory)
                                  
 % <fig>
       \captionsetup{margin=10pt,
@@ -59,33 +124,6 @@
       \newcommand{\xmlcaption}[2]{\caption{#2}}  %  <label>+<caption>
 
 
-% <journal-meta>
-      \newenvironment{journalmeta}{}{}
-      % <journal-id journal-id-type="nlm-ta">
-            \newcommand{\journalidtypenlmstyle}{\itshape}
-            \newcommand{\journalidtypenlm}[1]{{\journalidtypenlmstyle #1}}
-      % <journal-id journal-id-type="publisher-id">
-            \newcommand{\journalidtypeublisheridstyle}{\itshape}
-            \newcommand{\journalidtypeublisherid}[1]{{\journalidtypeublisheridstyle #1}}
-      % <journal-title-group>
-      \newenvironment{journaltitlegroup}{}{}
-            % <journal-title>
-                  \newcommand{\journaltitlestyle}{\itshape}
-                  \newcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
-            % <abbrev-journal-title abbrev-type="publisher">
-                   \newcommand{\abbrevjournaltitlepublisherstyle}{\itshape}
-                   \newcommand{\abbrevjournaltitlepublisher}[1]{{\abbrevjournaltitlepublisherstyle #1}}
-      % <issn pub-type="epub">
-             \newcommand{\issnepubstyle}{\itshape}
-             \newcommand{\issnepub}[1]{{\issnepubstyle #1}}
-      % <issn pub-type="ppub">
-             \newcommand{\issnppubstyle}{\itshape}
-             \newcommand{\issnppub}[1]{{\issnppubstyle #1}}
-      % <publisher>
-             \newenvironment{publisher}{}{}
-             % <publisher-name>
-                   \newcommand{\publishernamestyle}{\itshape}
-                   \newcommand{\publishername}[1]{{\publishernamestyle #1}}
 
 % Death commands (for not loosing important data) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % <sec>
