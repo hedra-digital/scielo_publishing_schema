@@ -72,7 +72,20 @@
             % <journal-title>
                   \newcommand{\journaltitlestyle}{\itshape}
                   \newcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
-  
+            % <abbrev-journal-title abbrev-type="publisher">
+                   \newcommand{\abbrevjournaltitlepublisherstyle}{\itshape}
+                   \newcommand{\abbrevjournaltitlepublisher}[1]{{\abbrevjournaltitlepublisherstyle #1}}
+      % <issn pub-type="epub">
+             \newcommand{\issnepubstyle}{\itshape}
+             \newcommand{\issnepub}[1]{{\issnepubstyle #1}}
+      % <issn pub-type="ppub">
+             \newcommand{\issnppubstyle}{\itshape}
+             \newcommand{\issnppub}[1]{{\issnppubstyle #1}}
+      % <publisher>
+             \newenvironment{publisher}{}{}
+             % <publisher-name>
+                   \newcommand{\publishernamestyle}{\itshape}
+                   \newcommand{\publishername}[1]{{\publishernamestyle #1}}
 
 % Death commands (for not loosing important data) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % <sec>
