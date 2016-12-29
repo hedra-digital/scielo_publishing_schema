@@ -13,15 +13,15 @@
 \printtitle 
 \printauthor
 
-
-      \renewcommand{\kwdgroupstyle}{\itshape\color{out}}
-      \renewcommand{\kwdgrouptitle}{Keywords:}
-      \renewcommand{\kwdgrouptitlestyle}{\noindent\bfseries\color{out}}
       \renewcommand{\kwdgroupbeforeskip}{\medskip}
-      \renewcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
-                                    \kwdgrouptitlestyle
-                                    \kwdgrouptitle} 
-                                    \kwdgroupstyle #1}
+      \renewcommand{\kwdstyle}{\itshape\color{out}}
+      \renewcommand{\kwdtitle}{Keywords:}
+      \renewcommand{\kwdtitlestyle}{\noindent\bfseries\color{out}}
+      \renewcommand{\kwd}[1]{{\kwdtitlestyle
+                              \kwdtitle} 
+                              \kwdstyle #1}
+      \renewcommand{\kwdgroupbeforeskip}{\medskip}
+      \renewenvironment{kwdgroup}{\kwdgroupbeforeskip}{}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -39,8 +39,10 @@
                   conhecimento dos dados quantitativos, clínicos e broncoscopicos. Um
                   quinto revisor averiguou os critérios morfológicos e quantitativos.
 
-                  \kwdgroup{Chagas disease, Quality of life, Health-related quality of 
+                  \begin{kwdgroup}
+                  \kwd{Chagas disease, Quality of life, Health-related quality of 
                   life, Cardiomyopathy, Determining factors}
+                  \end{kwdgroup}
             \end{abstract}
 
 

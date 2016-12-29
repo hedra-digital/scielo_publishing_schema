@@ -75,15 +75,14 @@
             \renewcommand{\abstractname}{}
             \renewcommand{\abstracttextfont}{\color{bl} \small \slshape}      % slanted text
       %      <kwd-group> ...
-            \newenvironment{kwd-group}{}{}
-            \newcommand{\kwdgroupstyle}{\itshape}
-            \newcommand{\kwdgrouptitle}{Keywords:}
-            \newcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
+            \newcommand{\kwdstyle}{\itshape}
+            \newcommand{\kwdtitle}{Keywords:}
+            \newcommand{\kwdtitlestyle}{\noindent\bfseries}
+            \newcommand{\kwd}[1]{{\kwdtitlestyle
+                                  \kwdtitle} 
+                                  \kwdstyle #1}
             \newcommand{\kwdgroupbeforeskip}{\medskip}
-            \newcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
-                                          \kwdgrouptitlestyle
-                                          \kwdgrouptitle} 
-                                          \kwdgroupstyle #1}
+            \newenvironment{kwdgroup}{\kwdgroupbeforeskip}{}
       %      <counts> ...
             \newenvironment{counts}{}{}
 
