@@ -15,7 +15,6 @@
 \printauthor
 
 % Defined at scielostyle.sty
-% Defined at scielostyle.sty
 \renewcommand{\articleidpubidtypedoi}[1]{#1}
 \renewcommand{\volume}[1]{#1}
 \renewcommand{\issue}[1]{#1}
@@ -38,6 +37,8 @@
 \renewenvironment{history}{\begin{tcolorbox}[title=<history>]}{\end{tcolorbox}}
 %      <permissions> ...
 \renewenvironment{permissions}{\begin{tcolorbox}[title=<permissions>]}{\end{tcolorbox}}
+%      <abstract> ...
+\renewenvironment{abstract}{\begin{tcolorbox}[title=<absctract>]}{\end{tcolorbox}}
 %      <kwd-group> ...
 \renewenvironment{kwdgroup}{\begin{tcolorbox}[title=<kwd-group>]}{\end{tcolorbox}}
 %      <counts> ...
@@ -45,7 +46,7 @@
 
 
         % <article-meta>
-        \begin{articlemeta}
+       \begin{articlemeta}
         %      <article-id pub-id-type="doi">
               \articleidpubidtypedoi{10.1590/1677-3225v14n4a01}
 
@@ -89,7 +90,10 @@
                 \begin{permissions}
                 ...
                 \end{permissions}
-        %      <abstract> ...         
+        %      <abstract> 
+                \begin{abstract}
+                ...
+                \end{abstract}         
         %      <kwd-group> ...
                 \begin{kwdgroup}
                 ...
