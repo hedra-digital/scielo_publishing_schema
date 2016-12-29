@@ -42,24 +42,24 @@ kkk
              \renewcommand{\journalidtypeublisheridstyle}{\itshape}
              \renewcommand{\journalidtypeublisherid}[1]{{\journalidtypeublisheridstyle #1}}
       % <journal-title-group>
-      % \renewenvironment{journaltitlegroup}{}{}
-      % %       % <journal-title>
-      %             \renewcommand{\journaltitlestyle}{\itshape}
-      %             \renewcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
-      % %       % <abbrev-journal-title abbrev-type="publisher">
-      %             \renewcommand{\abbrevjournaltitlepublisherstyle}{\itshape}
-      %             \renewcommand{\abbrevjournaltitlepublisher}[1]{{\abbrevjournaltitlepublisherstyle #1}}
-      % % <issn pub-type="epub">
-      %       \renewcommand{\issnepubstyle}{\itshape}
-      %       \renewcommand{\issnepub}[1]{{\issnepubstyle #1}
-      % % <issn pub-type="ppub">
-      %       \renewcommand{\issnppubstyle}{\itshape}
-      %       \renewcommand{\issnppub}[1]{{\issnppubstyle #1}
-      % % <publisher>
-      %       \renewenvironment{journalmeta}{}{}
-      %       % <publisher-name>
-      %             \renewcommand{\publishernamestyle}{\itshape}
-      %             \renewcommand{\publishername}[1]{{\publishernamestyle #1}
+      \renewenvironment{journaltitlegroup}{}{}
+      %       % <journal-title>
+                  \renewcommand{\journaltitlestyle}{\itshape}
+                  \renewcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
+      %       % <abbrev-journal-title abbrev-type="publisher">
+                  \renewcommand{\abbrevjournaltitlepublisherstyle}{\itshape}
+                  \renewcommand{\abbrevjournaltitlepublisher}[1]{{\abbrevjournaltitlepublisherstyle #1}}
+      % <issn pub-type="epub">
+            \renewcommand{\issnepubstyle}{\itshape}
+            \renewcommand{\issnepub}[1]{{\issnepubstyle #1}}
+      % <issn pub-type="ppub">
+            \renewcommand{\issnppubstyle}{\itshape}
+            \renewcommand{\issnppub}[1]{{\issnppubstyle #1}}
+      % <publisher>
+            \renewenvironment{publisher}{}{}
+            % <publisher-name>
+                  \renewcommand{\publishernamestyle}{\itshape}
+                  \renewcommand{\publishername}[1]{{\publishernamestyle #1}}
 
       % <journal-meta>
       \begin{journalmeta}
@@ -70,20 +70,22 @@ kkk
             \journalidtypeublisherid{bjmbr}
 
             % <journal-title-group>
-            % \begin{journaltitlegroup}
-            %      % <journal-title>
-            %      \journaltitle{Brazilian Journal of Medical and Biological Research}
+            \begin{journaltitlegroup}
+           
+                 % <journal-title>
+                 \journaltitle{Brazilian Journal of Medical and Biological Research}
       
-            %      % <abbrev-journal-title abbrev-type="publisher">
-            %      \abbrevjournaltitlepublisher{Braz. J. Med. Biol. Res.}
-            % \end{journaltitlegroup}
-            % <issn pub-type="epub">
-      %      \issnepub{1414-431X}
-      %      % <issn pub-type="ppub">
-      %      \issnppub{0100-879X}
-      %      % <publisher>
-      %           % <publisher-name>
-      %           \publishername{Associação Brasileira de Divulgação Científica}
+                 % <abbrev-journal-title abbrev-type="publisher">
+                 \abbrevjournaltitlepublisher{Braz. J. Med. Biol. Res.}
+           
+            \end{journaltitlegroup}
+           % <issn pub-type="epub">
+           \issnepub{1414-431X}
+           % <issn pub-type="ppub">
+           \issnppub{0100-879X}
+           % <publisher>
+                % <publisher-name>
+                \publishername{Associação Brasileira de Divulgação Científica}
       \end{journalmeta}
 
 %\input{latex-example-lipsum}
