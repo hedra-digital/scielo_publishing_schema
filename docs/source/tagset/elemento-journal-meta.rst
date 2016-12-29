@@ -38,3 +38,35 @@ Exemplo:
 
 
 .. {"reviewed_on": "20160626", "by": "gandhalf_thewhite@hotmail.com"}
+
+
+LaTeX
+-----
+
+  .. code-block:: tex
+ 
+      % Defined at scielostyle.sty
+      ...
+      % <journal-meta>
+           % <journal-id journal-id-type="nlm-ta">
+           \journalidtypenlm{Braz J Med Biol Res}
+           % <journal-id journal-id-type="publisher-id">
+           \journalidtypeublisherid{bjmbr}
+           % <journal-title-group>
+                % <journal-title>
+                \journaltitle{Brazilian Journal of Medical and Biological Research}
+                % <abbrev-journal-title abbrev-type="publisher">
+                \abbrevjournaltitlepublisher{Braz. J. Med. Biol. Res.}
+           % <issn pub-type="epub">
+           \issnepub{1414-431X}
+           % <issn pub-type="ppub">
+           \issnppub{0100-879X}
+           % <publisher>
+                % <publisher-name>
+                \publishername{Associação Brasileira de Divulgação Científica}
+
+      ...
+
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
+
+

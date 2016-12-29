@@ -59,6 +59,21 @@
       \newcommand{\xmlcaption}[2]{\caption{#2}}  %  <label>+<caption>
 
 
+% <journal-meta>
+      \newenvironment{journalmeta}{}{}
+      % <journal-id journal-id-type="nlm-ta">
+            \newcommand{\journalidtypenlmstyle}{\itshape}
+            \newcommand{\journalidtypenlm}[1]{{\journalidtypenlmstyle #1}}
+      % <journal-id journal-id-type="publisher-id">
+            \newcommand{\journalidtypeublisheridstyle}{\itshape}
+            \newcommand{\journalidtypeublisherid}[1]{{\journalidtypeublisheridstyle #1}}
+      % <journal-title-group>
+      \newenvironment{journaltitlegroup}{}{}
+            % <journal-title>
+                  \newcommand{\journaltitlestyle}{\itshape}
+                  \newcommand{\journaltitle}[1]{{\journaltitlestyle #1}}
+  
+
 % Death commands (for not loosing important data) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % <sec>
       \newcommand{\sectype}[1]{}
