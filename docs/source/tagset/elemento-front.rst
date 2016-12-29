@@ -151,3 +151,20 @@ Exemplo:
 
 
 .. {"reviewed_on": "20160625", "by": "gandhalf_thewhite@hotmail.com"}
+
+
+LaTeX
+-----
+
+O `elemento-front` deve agrupar os metadados dispostos em dois arquivos
+
+
+  .. code-block:: tex
+
+  \begin{document}
+    \input{journal-meta}
+    \input{article-meta}
+
+  \end{document}
+ 
+.. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
