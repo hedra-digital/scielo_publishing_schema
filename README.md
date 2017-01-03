@@ -3,10 +3,10 @@
 SciELO Publishing Schema + TeX
 ==============================
 
-This project is a SciELO Docs fork.
-Creating Docs for SciELOtex is the first step to parse SPC, Jats and Bits XML Schemata to LaTeX.   
+This project is a SciELO Docs code fork. We plan to parse SPC, Jats and Bits XML Schemata to LaTeX, 
+using pandoc and pandoc-jats and here you will find LaTeX code for each xml tag, a tex file and a PDF. 
 
-Here is the Bits, Jats and SPS to be described
+Here is the Bits, Jats and SPS to be described:
 
 
 | BITS                            | JATS                            | SCIELO (SPS 1.5)                |

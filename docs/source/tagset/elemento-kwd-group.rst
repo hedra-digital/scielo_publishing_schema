@@ -38,16 +38,22 @@ LaTeX
   .. code-block:: tex
  
       % Defined at scielostyle.sty
-      \renewcommand{\kwdgroupstyle}{\itshape}
-      \renewcommand{\kwdgrouptitle}{Keywords:}
-      \renewcommand{\kwdgrouptitlestyle}{\noindent\bfseries}
       \renewcommand{\kwdgroupbeforeskip}{\medskip}
-      \renewcommand{\kwdgroup}[1]{{\kwdgroupbeforeskip
-                                    \kwdgrouptitlestyle
-                                    \kwdgrouptitle} 
-                                    \kwdgroupstyle #1}
+      \renewcommand{\kwdstyle}{\itshape\color{out}}
+      \renewcommand{\kwdtitle}{Keywords:}
+      \renewcommand{\kwdtitlestyle}{\noindent\bfseries\color{out}}
+      \renewcommand{\kwd}[1]{{\kwdtitlestyle
+                              \kwdtitle} 
+                              \kwdstyle #1}
+      \renewcommand{\kwdgroupbeforeskip}{\medskip}
+      \renewenvironment{kwdgroup}{\kwdgroupbeforeskip}{}
+      
       ...
-      \kwdgroup{Chagas disease, Quality of life, Health-related quality of life, Cardiomyopathy, Determining factors}
+      \begin{kwdgroup}
+      \kwd{Chagas disease, Quality of life, Health-related quality of 
+      life, Cardiomyopathy, Determining factors}
+      \end{kwdgroup}
+
       ...
 
 .. {"reviewed_on": "20161224", "by": "jorge@hedra.com.br"}
