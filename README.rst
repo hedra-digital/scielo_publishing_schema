@@ -8,10 +8,10 @@ SciELOtex is the first step to create some scripts to convert SPC, Jats and Bits
 
 Here is the Bits, Jats and SPS to be described
 
-
-| BITS                            | JATS                            | SCIELO (SPS 1.5)                |
+| Left-aligned | Center-aligned | Right-aligned |
 | :---         |     :---:      |          ---: |
-| <abbrev>                        | <abbrev>                        |         sdsddssd                        |
+| git status   | git status     | git status    |
+| git diff     | git diff       | git diff      |
 
 
 
