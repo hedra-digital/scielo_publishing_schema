@@ -121,3 +121,7 @@ Exemplo (tag completa da `JATS versão 1.0 <http://jats.nlm.nih.gov/publishing/1
 
 .. {"reviewed_on": "20160728", "by": "gandhalf_thewhite@hotmail.com"}
 
+LaTeX
+-----
+
+Nihil.

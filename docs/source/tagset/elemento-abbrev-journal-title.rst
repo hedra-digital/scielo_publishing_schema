@@ -31,3 +31,8 @@ Exemplo:
     ...
 
 .. {"reviewed_on": "20160623", "by": "gandhalf_thewhite@hotmail.com"}
+
+LaTeX
+-----
+
+Ver elemento-journal-meta.

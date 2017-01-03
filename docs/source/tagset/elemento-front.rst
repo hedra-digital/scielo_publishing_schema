@@ -164,6 +164,8 @@ O `elemento-front` deve agrupar os metadados dispostos em dois arquivos
   \begin{document}
     \input{journal-meta}
     \input{article-meta}
+    % \input{body}
+    % \input{back}
 
   \end{document}
  
