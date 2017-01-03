@@ -10,7 +10,7 @@ Here is the Bits, Jats and SPS to be described
 
 
 | BITS                            | JATS                            | SCIELO (SPS 1.5)                |
-|---------------------------------|---------------------------------|---------------------------------|
+| :---         |     :---:      |          ---: |
 | <abbrev>                        | <abbrev>                        |                                 |
 |                                 | <abbrev-journal-title>          | <abbrev-journal-title>          |
 | <abstract>                      | <abstract>                      | <abstract>                      |
